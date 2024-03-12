@@ -519,9 +519,11 @@
 }
 
 .price-plans .plans {
+    border: 2px solid red;
     display: flex;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 1200px;
 }
 
 
@@ -529,8 +531,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    /* height: 100%; */
+    min-width: 400px;
     margin: 50px 0;
 }
 
@@ -812,6 +813,7 @@
 }
 
 
+
 footer {
     display: flex;
     align-items: center;
@@ -982,6 +984,13 @@ footer .bottom-data {
         width: 300px;
     }
 
+    .price-plans .plans {
+        width: 1000px;
+    }
+
+    .plans .compare {
+        min-width: 320px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1082,7 +1091,21 @@ footer .bottom-data {
         width: 340px;
     }
 
+    .price-plans .plans {
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .plans .compare {
+        min-width: 400px;
+        margin: 0 0 200px;
+    }
+
+    .plans .compare:last-child {
+        margin: 0;
+    }
 }
+
 
 @media (max-width: 786px) {
     .review-section {
@@ -1122,6 +1145,14 @@ footer .bottom-data {
     footer .upper-data {
         width: 100%;
 
+    }
+
+    .price-plans .plans {
+        width: 100%;
+    }
+
+    .trustpilot img {
+        width: 80%;
     }
 }
 
@@ -1168,6 +1199,6 @@ footer .bottom-data {
     }
 
     .trustpilot h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
