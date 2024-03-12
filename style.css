@@ -125,12 +125,12 @@
 /* Img section starts here */
 
 .img-section {
-    position: relative;
-    background-image: url(pictures/campaign-creators-gMsnXqILjp4-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     width: 95%;
-    height: 90vh;
+    border-radius: 10px;
+}
+
+.img-section img {
     border-radius: 10px;
 }
 
